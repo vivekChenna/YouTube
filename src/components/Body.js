@@ -1,10 +1,10 @@
 import MainContainer from "./MainContainer";
 import SideBar from "./SideBar";
 
-const Body = ({collapse , setCollapse}) => {
+const Body = () => {
   return (
     <div className="body-div">
-      <SideBar collapse={collapse}  setCollapse={setCollapse} />
+      <SideBar  />
       <MainContainer />
     </div>
   );

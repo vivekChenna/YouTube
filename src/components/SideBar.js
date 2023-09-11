@@ -1,7 +1,10 @@
 import { GoHomeFill } from "react-icons/go";
 import { MdAppShortcut, MdSubscriptions } from "react-icons/md";
 import SmallSection from "./SmallSection";
-const SideBar = ({ collapse, setCollapse }) => {
+import { useSelector } from "react-redux";
+const SideBar = () => {
+  const selector = useSelector((state) => state.app.isMenuOpen);
+
   const data = [
     {
       id: 1,
@@ -105,7 +108,7 @@ const SideBar = ({ collapse, setCollapse }) => {
     },
   ];
 
-  return collapse ? (
+  return selector ? (
     <div className="sidebar">
       {data.map((sectionData) => {
         return <SmallSection key={sectionData.id} {...sectionData} />;
