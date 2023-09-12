@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Youtube_Videos_URL } from "../utils/constants";
-// import VideoCard from "./VideoCard";
+import VideoCard from "./VideoCard";
 
 const VideoContainer = () => {
   const [data, setData] = useState([]);
@@ -8,18 +8,21 @@ const VideoContainer = () => {
   const getYoutubeData = async () => {
     const response = await fetch(Youtube_Videos_URL);
     const { items } = await response.json();
-
-    console.log(Object.keys(items));
-
-    const finalData = Object.values(items);
-    console.log(finalData);
+    console.log(items);
+    setData(items);
   };
 
   useEffect(() => {
     getYoutubeData();
   }, []);
 
-  return <div></div>;
+  return (
+    <div className="videoContainer">
+      {data.map((videoData) => {
+        return <VideoCard key={videoData.id} {...videoData} />;
+      })}
+    </div>
+  );
 };
 
 export default VideoContainer;
