@@ -38,14 +38,14 @@ const WatchVideo = () => {
     setChannelData(finalData?.items);
 
     // this api call is for video comments
-    const responseForComments = await fetch(
-      `https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&maxResults=30&videoId=${queryParams}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
-    );
+    // const responseForComments = await fetch(
+    //   `https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&maxResults=10&videoId=${queryParams}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
+    // );
 
-    const jsonDataForComments = await responseForComments.json();
-    console.log("printing data of comments");
-    console.log(jsonDataForComments.items[0]);
-    setCommentsData(jsonDataForComments.items);
+    // const jsonDataForComments = await responseForComments.json();
+    // console.log("printing data of comments");
+    // console.log(jsonDataForComments.items[0]);
+    // setCommentsData(jsonDataForComments.items);
 
     setLoad(!load);
   };
@@ -99,11 +99,11 @@ const WatchVideo = () => {
         </div>
       </div>
 
-      <div className="comments-div">
+      {/* <div className="comments-div">
         {commentsData.map((data) => {
           return <Comment {...data} />;
         })}
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const VideoCard = ({ snippet, id, contentDetails, statistics }) => {
-  const { thumbnails, channelTitle, localized, channelId } = snippet;
+  const { thumbnails, channelTitle, localized,  } = snippet;
 
   const desc = `${localized?.title.substr(0, 70)}...`;
 

@@ -6,7 +6,6 @@ const Body = () => {
     <div className="body-div">
       <SideBar />
       <Outlet />
-      {/* <MainContainer />  */}
     </div>
   );
 };
