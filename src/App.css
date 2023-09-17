@@ -90,6 +90,9 @@
 .videoCard {
   max-width: 300px;
 }
+.videoCard > img {
+  border-radius: 10px;
+}
 
 .videoCard-link {
   text-decoration: none;
@@ -114,14 +117,15 @@
 
 .videoCard-title {
   font-size: 14px;
-  color: rgb(69, 50, 50);
-  font-weight: 400;
+  color: rgb(97, 75, 75);
+  font-weight: 500;
 }
 
 .videoCard-views {
   font-size: 14px;
-  font-weight: 400;
-  color: rgb(69, 50, 50);
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(141, 122, 122);
 }
 
 .ButtonList {
@@ -132,14 +136,20 @@
 
 .btn-div > button {
   font-size: 16px;
-  border: 1px solid gray;
-  padding: 3px 3px;
   border-radius: 4px;
+  padding: 3px 4px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
   cursor: pointer;
 }
 
 .watch-video-div {
   margin: 15px 30px;
+}
+
+.watch-video-upper-div {
+  display: flex;
 }
 
 .loader {
@@ -173,6 +183,10 @@
 .channel-data-div {
   display: flex;
   gap: 1rem;
+}
+
+.channel-data-viewcount {
+  margin-top: 3px;
 }
 
 .video-title {
@@ -212,6 +226,9 @@
 .watch-video-div-channel-title {
   font-weight: 700;
 }
+.VideoRecomendation-div {
+  margin-top: 16px;
+}
 
 @media screen and (max-width: 400px) {
   iframe {
@@ -229,6 +246,12 @@
     max-width: 400px;
     margin: 0 auto;
   } */
+
+  .watch-video-upper-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .App {
     max-width: 400px;
@@ -248,5 +271,9 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1rem;
+  }
+
+  .head-section-3 {
+    display: none;
   }
 }

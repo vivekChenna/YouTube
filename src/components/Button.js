@@ -3,7 +3,7 @@ import React from "react";
 const Button = ({ ButtonValue }) => {
   return (
     <div className="btn-div">
-      <button>{ButtonValue}</button>
+      <button className="button-list-btn">{ButtonValue}</button>
     </div>
   );
 };
