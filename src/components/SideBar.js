@@ -1,5 +1,12 @@
 import { GoHomeFill } from "react-icons/go";
-import { MdAppShortcut, MdSubscriptions } from "react-icons/md";
+import {
+  MdAppShortcut,
+  MdSubscriptions,
+  MdVideoLibrary,
+  MdOutlineWatchLater,
+} from "react-icons/md";
+import { GrHistory } from "react-icons/gr";
+import { BiSolidVideos } from "react-icons/bi";
 import SmallSection from "./SmallSection";
 import { useSelector } from "react-redux";
 const SideBar = () => {
@@ -23,23 +30,23 @@ const SideBar = () => {
     },
     {
       id: 4,
-      icon: <GoHomeFill fontSize="1.65rem" />,
-      name: "Home",
+      icon: <MdVideoLibrary fontSize="1.65rem" />,
+      name: "Library",
     },
     {
       id: 5,
-      icon: <GoHomeFill fontSize="1.65rem" />,
-      name: "Home",
+      icon: <GrHistory fontSize="1.65rem" />,
+      name: "History",
     },
     {
       id: 6,
-      icon: <GoHomeFill fontSize="1.65rem" />,
-      name: "Home",
+      icon: <BiSolidVideos fontSize="1.65rem" />,
+      name: "Your Videos",
     },
     {
       id: 7,
-      icon: <MdAppShortcut fontSize="1.65rem" />,
-      name: "Shorts",
+      icon: <MdOutlineWatchLater fontSize="1.65rem" />,
+      name: "Watch Later",
     },
     {
       id: 8,
@@ -48,8 +55,8 @@ const SideBar = () => {
     },
     {
       id: 9,
-      icon: <GoHomeFill fontSize="1.65rem" />,
-      name: "Home",
+      icon: <MdVideoLibrary fontSize="1.65rem" />,
+      name: "Library",
     },
     {
       id: 10,
@@ -58,8 +65,8 @@ const SideBar = () => {
     },
     {
       id: 11,
-      icon: <GoHomeFill fontSize="1.65rem" />,
-      name: "Home",
+      icon: <BiSolidVideos fontSize="1.65rem" />,
+      name: "Your Videos",
     },
     {
       id: 12,
@@ -78,8 +85,8 @@ const SideBar = () => {
     },
     {
       id: 15,
-      icon: <GoHomeFill fontSize="1.65rem" />,
-      name: "Home",
+      icon: <BiSolidVideos fontSize="1.65rem" />,
+      name: "Your Videos",
     },
     {
       id: 16,
@@ -93,18 +100,18 @@ const SideBar = () => {
     },
     {
       id: 18,
-      icon: <MdSubscriptions fontSize="1.65rem" />,
-      name: "Subscriptions",
+      icon: <MdVideoLibrary fontSize="1.65rem" />,
+      name: "Library",
     },
     {
       id: 19,
-      icon: <GoHomeFill fontSize="1.65rem" />,
-      name: "Home",
+      icon: <BiSolidVideos fontSize="1.65rem" />,
+      name: "Your Videos",
     },
     {
       id: 20,
-      icon: <GoHomeFill fontSize="1.65rem" />,
-      name: "Home",
+      icon: <MdAppShortcut fontSize="1.65rem" />,
+      name: "Shorts",
     },
   ];
 
