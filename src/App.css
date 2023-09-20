@@ -272,6 +272,10 @@
     margin: 0 auto;
   } */
 
+  .search-suggestion-div > ul {
+    width: 100%;
+  }
+
   .watch-video-upper-div {
     display: flex;
     flex-direction: column;
