@@ -37,6 +37,10 @@
   width: 540px;
 }
 
+/* .head-section-2-upper-div {
+  width: 540px;
+} */
+
 .head-section-2 > button {
   width: 60px;
   border-top-right-radius: 20px;
@@ -267,15 +271,23 @@
     align-items: center;
   }
 
+  .head-section-2 {
+    width: 220px;
+  }
+
   /* .head-div {
     max-width: 400px;
     margin: 0 auto;
   } */
 
+  .search-suggestion-div {
+    max-width: 173px;
+    padding: 3px 4px;
+  }
+
   .search-suggestion-div > ul {
     width: 100%;
   }
-
   .watch-video-upper-div {
     display: flex;
     flex-direction: column;

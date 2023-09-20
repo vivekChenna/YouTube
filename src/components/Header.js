@@ -46,7 +46,7 @@ const Header = () => {
         <p className="youtube-in">IN</p>
       </div>
 
-      <div>
+      <div className="head-section-2-upper-div">
         <div className="head-section-2">
           <input
             type="text"
